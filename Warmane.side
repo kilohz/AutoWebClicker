@@ -1,0 +1,50 @@
+{
+  "id": "fa889714-9d9a-416c-9ffa-cb5e752a31cd",
+  "version": "2.0",
+  "name": "Warmane",
+  "url": "https://www.warmane.com",
+  "tests": [{
+    "id": "db499dbc-3876-4770-a307-b2d13410d9dc",
+    "name": "CollectPoints",
+    "commands": [{
+      "id": "75065064-3b41-462d-97bf-205aa2c5c318",
+      "comment": "",
+      "command": "open",
+      "target": "/account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7b7f1dc-9901-4063-a6a1-60474e45091d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44a56a7d-8031-4ea0-a4ee-3274f138cc6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Collect points",
+      "targets": [
+        ["linkText=Collect points", "linkText"],
+        ["css=.myCollect > .wm-ui-hyper-custom-b", "css:finder"],
+        ["xpath=//a[contains(text(),'Collect points')]", "xpath:link"],
+        ["xpath=//div[@id='page-content']/div[2]/div/table/tbody/tr[4]/td/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#self')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Collect points')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "738ea90b-a73f-460e-ad5b-25f40dc33be4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db499dbc-3876-4770-a307-b2d13410d9dc"]
+  }],
+  "urls": ["https://www.warmane.com/"],
+  "plugins": []
+}
